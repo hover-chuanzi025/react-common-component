@@ -1,0 +1,66 @@
+.banner-container {
+  position: relative;
+  background-color: #ccc;
+  overflow: hidden;
+  margin: 100px auto;
+  border-radius: 5px;
+  z-index: 99;
+}
+.banner-container .before {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, .5);
+  padding: 5px;
+  color: #fff;
+  z-index: 99;
+  border-radius: 0 17px 17px 0;
+}
+.banner-container .before:hover {
+  cursor: pointer;
+}
+.banner-container .before:active {
+  background-color: rgba(0, 0, 0, .8);
+  
+}
+.banner-container .next {
+  position: absolute;
+  top: 50%; 
+  right: 0px;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, .5);
+  padding: 5px;
+  border-radius: 17px 0px 0px 17px;
+  color: #fff;
+  z-index: 99;
+}
+.banner-container .next:hover {
+  cursor: pointer;
+}
+.banner-container .next:active {
+  background-color: rgba(0, 0, 0, .8);
+  
+}
+.indicator-wrap {
+  position: absolute;
+  display: flex;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 99;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+.indicator-wrap div {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.active {
+  background-color: #000 !important;
+}
